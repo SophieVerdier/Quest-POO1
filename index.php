@@ -10,12 +10,7 @@ var_dump($car);
 
 
 $bike = new Bicycle();
-$bike->color = 'blue';
-$bike->currentSpeed = 0;
+echo $bike->forward();
+echo $bike->brake();
 var_dump($bike);
 
-echo $bike->forward();
-echo '<br> Vitesse du vélo : ' . $bike->currentSpeed . ' km/h' . '<br>';
-
-echo $bike->brake();
-echo '<br> Vitesse du vélo : ' . $bike->currentSpeed . ' km/h' . '<br>';

@@ -14,3 +14,9 @@ echo $bike->forward();
 echo $bike->brake();
 var_dump($bike);
 
+require_once 'Truck.php';
+$truck = new Truck('green', 4, 'electric', 20);
+$truck->setLoad(20);
+echo $truck->forward();
+echo $truck->getFilling();
+var_dump($truck);
